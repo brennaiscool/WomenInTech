@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<p>Women in Tech: A game Reality</p>
+
+<button onclick="Apple()">Apple</button>
+<button onclick="Google()">Google</button>
+<button onclick="Twitter()">Twitter</button>
+
+<p id="demo1"></p>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+function Apple() {
+    document.getElementById("demo").innerHTML = "Congrats you just sent your resume to Apple to apply for your first job!  2 weeks later...  'This is the recruiter from Apple, we reviewed your application and after your interview last week, we think you’d be a really good fit for our company. We're happy to announce you as our new employee!'";
+    document.getElementById("applepushed").style.display = "block";
+}
+
+function Google() {
+  document.getElementById('demo1').innerHTML = "Hello Boys";
+}
+
+function Twitter() {
+  document.getElementById('demo2').innerHTML = "Explain please";
+}
+
+</script>
+<!--The hidden text after clicking the apple function-->
+<!--ID applepushed is displaying the text in block form-->
+<!--invisible is a class in css wich displays none-->
+<div id="applepushed" class="invisible">
+<h1></h1>
+<button id="hide" onclick="witter()">Go On...</button>
+<p id="demo2"></p>
+
+<script>
+function witter() {
+    document.getElementById("demo2").innerHTML = "Now you're working for Apple and you feel invincible. You do feel rather scared,but that’s understandable seeing as you’re starting a new job, one that happens to be at Apple of all places. How much luckier could you get? You get into a groove after a couple weeks; the people seem pretty cool and you’re already making friends.However after awhile you start to notice that your boss has been favoring the male team members who were hired at the same time as you. You tell yourself that you’re crazy, but pretty soon it’s undeniably that your boss is biased towards your male counterparts. He glorifies the things they do, doesn’t pay much attention to you, and doesn’t act like you matter. One day you find out that the male members of the team are even getting payed more than you despite having done the same amount of work, and you've been working extremely hard these last few weeks. Will you go talk to your boss or keep up the work?"; document.getElementById("GoOnpushed").style.display = "block";
+
+  }
+  </script>
+
+  <div id="GoOnpushed" class="invisible">
+  <h1></h1>
+  <button onclick="talktoboss()">Talk to Boss</button>
+  <p id="demo2"></p>
+
+  <script>
+  function talktoboss() {
+      document.getElementById("demo2").innerHTML = "You talk to your boss about your concerns, but he doesn’t seem very interested in the conversation. You aren’t going to give up easy though, so you keep asking why you get payed less. Your boss finally gives in and says that they’re just doing a better job and that you should just accept it. You try and argue that your work has been just as good as theirs, but your boss promptly writes you off and asks if you really want to keep working here or not."; document.getElementById("hide").style.display = "none";
+      }
+    </script>
+    <div id="talktoboss()"
+</div>
+<div id="GoOnpushed" class="invisible">
+<h1></h1>
+<button onclick="stayquiet()">Stay Quiet</button>
+<p id="demo2"></p>
+
+<script>
+function stayquiet() {
+    document.getElementById("demo2").innerHTML = "You stay quiet and start working twice as hard to compensate, but you notice that your boss still doesn’t care and some of your male coworkers have even been promoted. You continue to keep quiet hoping he’ll notice without making a scene, but you soon discover that your boss has started giving some of the male counterparts credit for the work you’ve been doing. "; document.getElementById("hide").style.display = "none";
+    }
+  </script>
+  <div id="stayquiet()"
+</div>
+
+
+</body>
+</html>
